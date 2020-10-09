@@ -7,6 +7,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() featureSelected = new EventEmitter<string>();
+  isCollapsed = true;
 
   constructor() {
   }
@@ -16,5 +17,10 @@ export class HeaderComponent implements OnInit {
 
   onSelect(feature: string): any {
     this.featureSelected.emit(feature);
+  }
+
+  toggleCollapse(): any {
+    this.isCollapsed = !this.isCollapsed;
+
   }
 }

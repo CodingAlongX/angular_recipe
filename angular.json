@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "recipe"
+  "defaultProject": "recipe",
+  "cli": {
+    "analytics": "cb459609-7a78-47af-9ad3-0243a28b47c4"
+  }
 }
